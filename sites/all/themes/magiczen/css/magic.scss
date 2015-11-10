@@ -1,0 +1,37 @@
+@import 'bourbon/bourbon';
+@import 'neat/neat';
+
+// fonts
+@font-face {
+  font-family: "Hype";
+  src: url("fonts/Hype.ttf") format("truetype"),
+}
+
+body {
+  @include background(url("../images/stage.jpg") no-repeat center center fixed);
+  background-size: cover;
+  font-family: "Hype";
+  text-transform: uppercase;
+  color: white;
+}
+
+#logo {
+  @include span-columns(12);
+  @include omega();
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: gold;
+}
+
+#secondary-menu, #main-menu {
+  display: inline-block;
+  font-size: 22px;
+}
